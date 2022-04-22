@@ -1,0 +1,17 @@
+<div class="background-grey">
+    <p *ngIf="show">
+        Exibido pela condicional ngIf
+    </p>
+    <p *ngIf=" name === 'Leonardo' ">
+        Uau voce possui um nome, {{name}}
+    </p>
+    <!-- /* usando o else em uma condição*/ -->
+    <p *ngIf=" usbName ==='Kingston';else usbNomeDiferente ">
+        Boa compra!
+    </p>
+    <ng-template #usbNomeDiferente>
+        <div>
+            <h2>"Parece que voce não tem um Kingston"</h2>
+        </div>
+    </ng-template>
+</div>

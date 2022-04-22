@@ -1,0 +1,5 @@
+<div *ngIf="showFirstComponent === true; else secondComponent"></div>
+
+<ng-template #secondComponent>
+    <p>segundo componente sendo exibido!</p>
+</ng-template>
